@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Sekolah</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+ 
+      <!--bagian navbar-->
+      <div class="top">
+        <div class="background1"></div>
+            <div class="menu">
+                <a href=""><img src=""></a>
+                    <ul>
+                        <li><a href="">BERANDA</a></li>
+                        <li><a href="">STAF PENGAJAR</a></li>
+                        <li><a href="">KOMPETENSI KEAHLIAN</a></li>
+                        <li><a href="">FASILITAS</a></li>
+                        <li><a href="">PUSAT INFORMASI</a></li>
+                        <li><a href=""></a></li>
+                     </ul>
+               </div>
+   
+          <!--bagian banner-->
+    <section class="banner">
+            <div class="text1">
+                 <h1>SEKOLAH MENENGAH KEJURUAN NEGERI<br>Terakreditasi A</h1>
+                 <p>Selamat Datang</p>
+    
+                 <p>Pendaftaran peserta didik baru</p>
+                 <br>
+                 <span><a href="">Registrasi</a></span>
+             </div>
+    </section>
+<br>
+<br>
+<br>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="slideshow 1.png" style="width:100%">
+          <div class="text">Di depan gedung sekolah</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="slideshow 2.png" style="width:100%">
+          <div class="text">Foto bersama di AURI</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="slideshow 3.png" style="width:100%">
+          <div class="text">Pemberian penghargaan</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+    <div id="sambutan">
+        <h2>SAMBUTAN KEPALA SMKN</h2>
+        <img src="sambutan.png"; alt="image";>
+        <p>Syukur Alhamdulillah website   SMK Penerbangan Sidoarjo semakin berkembang dan bermanfaat, khususnya sebagai jembatan komunikasi antara manajemen sekolah dengan guru, peserta didik, wali murid, industri, perguruan tinggi serta masyarakat.   Menyadari bahwa tantangan yang dihadapi ke depan semakin tidak ringan, maka dalam konteks persaingan lokal, nasional, dan global, kami telah mencanangkan bahwa SMK Penerbangan Sidoarjo mengacu  pada Visi Misi Pemerintah Daerah Provinsi Jawa Timur : CETTAR  (Cepat, Efektif, Tanggap, Transparansi, Responsif). Hal ini selaras dengan komitmen kami yang bertekad menjadikan SMK Penerbangan Sidoarjo sebagai Sekolah Menengah Kejuruan Negeri yang handal, unggul, terpercaya dalam menciptakan Sumber Daya Manusia yang trampil, inovatif dan berkarakter maupun lingkungan yang bernuansa edukatif, kompetitif dan kekeluargaan dalam mengikuti perkembangan dunia kerja baik di kancah Nasional maupun Internasional.</p>
+    </div>
+
+    <div id="sambutan">
+        <h2>SELAMAT DATANG DI SMKN SIDOARJO</h2>
+    </div>
+
+    <div class=" isi2">
+      <div class="row">
+          <div class="col">
+              <div class="card">
+                  <img src="C:\Users\novan\Desktop\website-sekolah-main\kepala_sekolah.png" alt="Avatar">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's   standard dummy text ever since the 1500s, when an</p>
+                    <p><span><a href="">Go To</a></span></p>
+              </div>
+              <div class="card">
+                  <img src="C:\Users\novan\Desktop\website-sekolah-main\kepala_sekolah.png" alt="Avatar">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's   standard dummy text ever since the 1500s, when an</p>
+                    <p><span><a href="">Go To</a></span></p>
+              </div>
+              <div class="card">
+                  <img src="C:\Users\novan\Desktop\website-sekolah-main\kepala_sekolah.png" alt="Avatar">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's   standard dummy text ever since the 1500s, when an</p>
+                    <p><span><a href="">Go To</a></span></p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+
+<footer>
+    <div class="footer-button">
+        &copy 2021 | website sekolah 
+    </div>
+</footer>
+</html>
